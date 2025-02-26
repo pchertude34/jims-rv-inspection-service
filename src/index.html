@@ -78,50 +78,178 @@ eleventyNavigation:
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    <section id="hero-1898">
         <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
+            <div class="cs-content">
+                <span class="cs-topper">Best Gym Of The City For Fitness</span>
+                <h1 class="cs-title">You Can Boost Your Strength</h1>
                 <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum
-                    varius. Nibh tortor id aliquet lectus proin nibh
-                    condimentum.
+                    Develop confidence, composure under pressure and the
+                    discipline needed to be a champ. This is the club you’ve
+                    been looking for.
                 </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                        class="cs-img"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                        alt="play icon"
-                        width="17"
-                        height="17"
-                    />
-                    Get in Touch
-                </a>
+                <a href="" class="cs-button-solid">Read More</a>
+                <img
+                    class="cs-content-graphic"
+                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gym-hero-graphic.svg"
+                    alt="graphic"
+                    height="1075"
+                    width="1135"
+                    loading="lazy"
+                    decoding="async"
+                />
             </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source
+                            media="(max-width: 600px)"
+                            srcset="
+                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png
+                            "
+                        />
+                        <!--Tablet and above Image-->
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="
+                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png
+                            "
+                        />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png"
+                            alt="icon"
+                            width="48"
+                            height="48"
+                        />
+                    </picture>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Get GYM Membership</h3>
+                        <p class="cs-item-text">
+                            We provide some of the finest quality, most
+                            responsive and reliable, and cost effective services
+                            and solutions.
+                        </p>
+                        <a href="/" class="cs-link">
+                            Join Us Today
+                            <img
+                                class="cs-arrow"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chevron-right-red.svg"
+                                alt="icon"
+                                width="20"
+                                height="20"
+                                aria-hidden="true"
+                            />
+                        </a>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source
+                            media="(max-width: 600px)"
+                            srcset="
+                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+                            "
+                        />
+                        <!--Tablet and above Image-->
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="
+                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+                            "
+                        />
+                        <img
+                            loading="lazy"
+                            decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png"
+                            alt="icon"
+                            width="48"
+                            height="48"
+                        />
+                    </picture>
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Be a GYM Instructor</h3>
+                        <p class="cs-item-text">
+                            We provide some of the finest quality, most
+                            responsive and reliable, and cost effective services
+                            and solutions.
+                        </p>
+                        <a href="/" class="cs-link">
+                            Join Us Today
+                            <img
+                                class="cs-arrow"
+                                loading="lazy"
+                                decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chevron-right-red.svg"
+                                alt="icon"
+                                width="20"
+                                height="20"
+                                aria-hidden="true"
+                            />
+                        </a>
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <!-- Background Image -->
-        <picture class="cs-picture">
+        <picture class="cs-background">
+            <!--Mobile Image-->
             <source
                 media="(max-width: 600px)"
-                srcset="/assets/images/landing-m.webp"
+                srcset="
+                    {% getUrl '/assets/images/hero.jpg' | resize({ width: 640, height: 1500, position: 'attention' }) | avif %}
+                "
+                type="image/avif"
+            />
+            <source
+                media="(max-width: 600px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.jpg' | resize({ width: 640, height: 1500, position: 'attention' }) | webp %}
+                "
+                type="image/webp"
+            />
+            <source
+                media="(max-width: 600px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.jpg' | resize({ width: 640, height: 1500, position: 'attention' }) | jpeg %}
+                "
+                type="image/jpeg"
+            />
+            <!--Tablet Image-->
+            <source
+                media="(min-width: 601px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | avif %}
+                "
+                type="image/avif"
             />
             <source
                 media="(min-width: 601px)"
-                srcset="/assets/images/landing.jpg"
+                srcset="
+                    {% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | webp %}
+                "
+                type="image/webp"
+            />
+            <source
+                media="(min-width: 601px)"
+                srcset="
+                    {% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | jpeg %}
+                "
+                type="image/jpeg"
             />
             <img
-                aria-hidden="true"
+                src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 2250, height: 1500, position: 'attention' }) | jpeg %}"
+                alt="traveling rv"
+                width="2250"
+                height="1500"
                 decoding="async"
-                src="/assets/images/landing.jpg"
-                alt="new home"
-                width="2500"
-                height="1667"
-                loading="eager"
+                aria-hidden="true"
             />
         </picture>
     </section>
