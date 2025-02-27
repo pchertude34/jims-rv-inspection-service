@@ -205,7 +205,11 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: #000;
+                background: linear-gradient(
+                    to bottom,
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)
+                );
                 /* prevents the cursor from interacting with it */
                 pointer-events: none;
                 opacity: 0.4;
@@ -248,6 +252,15 @@
 
         .cs-background {
             height: 60%;
+            // &:before {
+            //     box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+            //     background: linear-gradient(
+            //         to bottom,
+            //         rgba(0, 0, 0, 0.5),
+            //         rgba(0, 0, 0, 0.5)
+            //     );
+            //     opacity: 0.4;
+            // }
         }
     }
 }
@@ -257,7 +270,20 @@
     #hero-1898 {
         .cs-background {
             &::before {
-                content: none;
+                content: "";
+                width: 100%;
+                height: 100%;
+                // background: linear-gradient(
+                //     to bottom,
+                //     rgba(0, 0, 0, 0.5),
+                //     rgba(0, 0, 0, 0.5)
+                // );
+                // opacity: 0.4;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
             }
         }
     }
@@ -272,6 +298,14 @@
 
         .cs-background {
             height: 70%;
+            &::before {
+                // background: linear-gradient(
+                //     to bottom,
+                //     rgba(0, 0, 0, 0.5),
+                //     rgba(0, 0, 0, 0.5)
+                // );
+                // opacity: 0.4;
+            }
         }
     }
 }
@@ -290,7 +324,14 @@
             background-repeat: no-repeat;
             /* creates the parallax effect */
             background-attachment: fixed;
-
+            &::before {
+                // background: linear-gradient(
+                //     to bottom,
+                //     rgba(0, 0, 0, 0.5),
+                //     rgba(0, 0, 0, 0.5)
+                // );
+                // opacity: 0.4;
+            }
             img {
                 display: none;
             }
