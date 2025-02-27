@@ -8,13 +8,22 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primaryOpaque: rgba(58, 153, 144, 0.2);
-        --primary: #3a9990;
-        --primaryDark: #265f5c;
-        --secondaryOpaque: rgba(179, 224, 109, 0.2);
-        --secondary: #b3e06d;
-        --secondaryDark: #7cb72b;
-        --tertiary: #578fa4;
+        // --primaryOpaque: rgba(4, 97, 104, 0.2);
+        // --primary: #046168;
+        // --primaryDark: #034d52;
+        // --secondaryOpaque: rgba(27, 58, 87, 0.2);
+        // --secondary: #1b3a57;
+        // --secondaryDark: #0f2b42;
+        --primary: #1b3a57;
+        --primaryDark: #0f2b42;
+        --primaryOpaque: rgba(27, 58, 87, 0.2);
+        --secondary: #9bc6a8;
+        --secondaryDark: #7e9f7f;
+        --secondaryOpaque: rgba(155, 198, 168, 0.2);
+        --tertiary: #f26322;
+        --tertiaryDark: #d94a0f;
+        --tertiaryOpaque: rgba(242, 99, 34, 0.2);
+
         --headerColor: #1a1a1a;
         --bigTextColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
@@ -51,7 +60,7 @@
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         font-weight: 700;
-        color: var(--primary);
+        color: var(--tertiary);
         text-align: inherit;
     }
 
