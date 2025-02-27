@@ -104,25 +104,55 @@ eleventyNavigation:
                     <picture class="cs-picture">
                         <!--Mobile Image-->
                         <source
-                            media="(max-width: 600px)"
+                            media="(max-width: 500px)"
                             srcset="
-                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png
+                                {% getUrl '/assets/images/inspection.webp' | resize({ width: 838, height: 320, position: 'center' }) | avif %}
                             "
+                            type="image/avif"
                         />
-                        <!--Tablet and above Image-->
+                        <source
+                            media="(max-width: 500px)"
+                            srcset="
+                                {% getUrl '/assets/images/inspection.webp' | resize({ width: 838, height: 320, position: 'center' }) | webp %}
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            media="(max-width: 500px)"
+                            srcset="
+                                {% getUrl '/assets/images/inspection.webp' | resize({ width: 838, height: 320, position: 'center' }) | jpeg %}
+                            "
+                            type="image/jpeg"
+                        />
+                        <!--Tablet Image-->
                         <source
                             media="(min-width: 601px)"
                             srcset="
-                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png
+                                {% getUrl '/assets/images/inspection.webp' | resize({ width: 280, height: 364, position: 'attention' }) | avif %}
                             "
+                            type="image/avif"
+                        />
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="
+                                {% getUrl '/assets/images/inspection.webp' | resize({ width: 280, height: 364, position: 'attention' }) | webp %}
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="
+                                {% getUrl '/assets/images/inspection.webp' | resize({ width: 280, height: 364, position: 'attention' }) | jpeg %}
+                            "
+                            type="image/jpeg"
                         />
                         <img
                             loading="lazy"
                             decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-2.png"
-                            alt="icon"
-                            width="48"
-                            height="48"
+                            src="/assets/images/inspection.webp"
+                            alt="rv inspection"
+                            width="280"
+                            height="364"
                         />
                     </picture>
                     <div class="cs-info">
@@ -133,7 +163,7 @@ eleventyNavigation:
                             purchase.
                         </p>
                         <a href="/" class="cs-link">
-                            Learn More
+                            Join Us Today
                             <img
                                 class="cs-arrow"
                                 loading="lazy"
@@ -149,27 +179,56 @@ eleventyNavigation:
                 </li>
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <!--Mobile Image-->
                         <source
-                            media="(max-width: 600px)"
+                            media="(max-width: 500px)"
                             srcset="
-                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+                                {% getUrl '/assets/images/exterior-inspection.webp' | resize({ width: 838, height: 320, position: 'center' }) | avif %}
                             "
+                            type="image/avif"
                         />
-                        <!--Tablet and above Image-->
+                        <source
+                            media="(max-width: 500px)"
+                            srcset="
+                                {% getUrl '/assets/images/exterior-inspection.webp' | resize({ width: 838, height: 320, position: 'center' }) | webp %}
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            media="(max-width: 500px)"
+                            srcset="
+                                {% getUrl '/assets/images/exterior-inspection.webp' | resize({ width: 838, height: 320, position: 'center' }) | jpeg %}
+                            "
+                            type="image/jpeg"
+                        />
+                        <!--Tablet Image-->
                         <source
                             media="(min-width: 601px)"
                             srcset="
-                                https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png
+                                {% getUrl '/assets/images/exterior-inspection.webp' | resize({ width: 280, height: 364, position: 'attention' }) | avif %}
                             "
+                            type="image/avif"
+                        />
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="
+                                {% getUrl '/assets/images/exterior-inspection.webp' | resize({ width: 280, height: 364, position: 'attention' }) | webp %}
+                            "
+                            type="image/webp"
+                        />
+                        <source
+                            media="(min-width: 601px)"
+                            srcset="
+                                {% getUrl '/assets/images/exterior-inspection.webp' | resize({ width: 280, height: 364, position: 'attention' }) | jpeg %}
+                            "
+                            type="image/jpeg"
                         />
                         <img
                             loading="lazy"
                             decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-service-3.png"
-                            alt="icon"
-                            width="48"
-                            height="48"
+                            src="/assets/images/inspection.webp"
+                            alt="exterior maintenance"
+                            width="280"
+                            height="364"
                         />
                     </picture>
                     <div class="cs-info">
