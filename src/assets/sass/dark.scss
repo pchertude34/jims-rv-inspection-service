@@ -8,9 +8,13 @@
 @media only screen and (min-width: 0rem) {
     // Dark Mode Color Scheme
     :root {
-        --dark: #082032;
-        --medium: #2c394b;
-        --accent: #334756;
+        // --dark: #082032;
+        // --medium: #2c394b;
+        // --accent: #334756;
+
+        --dark: #121212;
+        --medium: #181818;
+        --accent: #282828;
     }
 
     body.dark-mode {
