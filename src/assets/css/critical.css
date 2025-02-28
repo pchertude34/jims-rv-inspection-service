@@ -284,178 +284,140 @@
   }
 }
 /*-- -------------------------- -->
-<---         Services           -->
+<---          Services          -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1975 {
+  #services-1646 {
     padding: var(--sectionPadding);
+    background-color: #f7f7f7;
     overflow: hidden;
     position: relative;
+    z-index: 1;
   }
-  #services-1975::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary);
-    opacity: 0.05;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-1975 .cs-container {
+  #services-1646 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #services-1975 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-  }
-  #services-1975 .cs-card-group {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
     /* 16px - 20px */
     gap: clamp(1rem, 2vw, 1.25rem);
   }
-  #services-1975 .cs-item {
-    text-align: left;
-    list-style: none;
+  #services-1646 .cs-content {
     width: 100%;
-    margin: 0 auto;
-    /* prevents padding and border from affecting height and width */
+    /* 32px - 80px top & bottom */
+    /* 16px - 80px left & right */
+    padding: clamp(2rem, 6vw, 5rem) clamp(1rem, 5vw, 5rem);
+    border-radius: var(--borderRounded);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* left aligns content, center it horizontally by setting to center */
+    align-items: flex-start;
+    /* left aligns content, center it horizontally by setting to center */
+    text-align: left;
+    background-color: #fff;
+  }
+  #services-1646 .cs-title {
+    color: var(--headerColor);
+  }
+  #services-1646 .cs-text {
+    /* 28px - 40px */
+    margin-bottom: clamp(1.75rem, 3.9vw, 2.5rem);
+    color: var(--bodyTextColor);
+  }
+  #services-1646 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  #services-1646 .cs-item {
+    list-style: none;
+    /* .cs-h3 and .cs-item-text both use text-align: inherit, so change the below to affect the whole item */
+    text-align: left;
+    width: 100%;
+    margin: 0;
     box-sizing: border-box;
     /* 16px - 32px */
-    padding: clamp(1rem, 4vw, 2rem);
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: var(--borderRounded);
     box-sizing: border-box;
     background-color: #fff;
-    border-radius: 0.5rem;
-    border: 1px solid transparent;
     display: flex;
     flex-direction: column;
-    grid-column: span 12;
-    grid-row: span 1;
-    position: relative;
-    z-index: 1;
     transition: border-color 0.3s;
+    gap: 1.5rem;
+    grid-column: span 12;
   }
-  #services-1975 .cs-item:hover {
+  #services-1646 .cs-item:hover {
     border-color: var(--primary);
   }
-  #services-1975 .cs-item:hover .cs-h3 {
-    color: var(--secondary);
+  #services-1646 .cs-icon {
+    width: 3rem;
+    height: auto;
+    display: block;
   }
-  #services-1975 .cs-flex {
-    display: flex;
-    flex-direction: column;
-  }
-  #services-1975 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-    font-weight: 700;
-    line-height: 1.2em;
+  #services-1646 .cs-h3 {
+    font-size: 1.25rem;
     text-align: inherit;
-    margin: 0 0 1rem 0;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 0.75rem;
     color: var(--headerColor);
     transition: color 0.3s;
   }
-  #services-1975 .cs-item-text {
-    font-size: 1rem;
+  #services-1646 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: inherit;
     line-height: 1.5em;
     margin: 0;
-    margin-bottom: 1.5rem;
-    padding: 0;
     color: var(--bodyTextColor);
-  }
-  #services-1975 .cs-link {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    text-decoration: none;
-    max-width: fit-content;
-    margin-top: auto;
-    color: var(--primary);
-    border-bottom: 1px solid var(--primary);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  #services-1975 .cs-picture {
-    margin: 2rem 0 0 0;
-    overflow: hidden;
-    border-radius: 0.5rem;
-    display: block;
-    max-height: 150px;
-    position: relative;
-  }
-  #services-1975 .cs-picture:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary);
-    opacity: 0.05;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-1975 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-1975 .cs-content {
-    width: 55%;
+  #services-1646 .cs-container {
+    flex-direction: row;
+    align-items: stretch;
   }
-  #services-1975 .cs-item {
+  #services-1646 .cs-content {
+    width: 44%;
+    max-width: 32.625rem;
+    align-self: stretch;
+    flex: none;
+  }
+  #services-1646 .cs-item {
     grid-column: span 6;
-  }
-}
-/* Large Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-  #services-1975 .cs-item {
-    grid-column: span 3;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #services-1975 {
+  body.dark-mode #services-1646 {
     background-color: rgba(0, 0, 0, 0.2);
   }
-  body.dark-mode #services-1975 .cs-item {
-    background-color: var(--medium);
+  body.dark-mode #services-1646 .cs-item,
+  body.dark-mode #services-1646 .cs-content {
+    background-color: rgba(0, 0, 0, 0.6);
   }
-  body.dark-mode #services-1975 .cs-title,
-  body.dark-mode #services-1975 .cs-text,
-  body.dark-mode #services-1975 .cs-h3,
-  body.dark-mode #services-1975 .cs-item-text,
-  body.dark-mode #services-1975 .cs-link {
+  body.dark-mode #services-1646 .cs-title,
+  body.dark-mode #services-1646 .cs-text,
+  body.dark-mode #services-1646 .cs-h2,
+  body.dark-mode #services-1646 .cs-h3,
+  body.dark-mode #services-1646 .cs-item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services-1975 .cs-text,
-  body.dark-mode #services-1975 .cs-item-text {
+  body.dark-mode #services-1646 .cs-text,
+  body.dark-mode #services-1646 .cs-item-text {
     opacity: 0.8;
-  }
-  body.dark-mode #services-1975 .cs-picture {
-    background-color: var(--dark);
   }
 }
 

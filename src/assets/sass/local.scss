@@ -114,6 +114,7 @@
                 height: 100%;
                 object-fit: cover;
                 position: absolute;
+                border-radius: var(--borderRounded);
                 top: 0;
                 left: 0;
             }
