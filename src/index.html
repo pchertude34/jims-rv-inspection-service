@@ -359,21 +359,51 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building1.jpg
+                            {% getUrl '/assets/images/gallery/rv-1.jpg' | resize({ width: 336, height: 336, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-1.jpg' | resize({ width: 336, height: 336, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-1.jpg' | resize({ width: 336, height: 336, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building1.jpg
+                            {% getUrl '/assets/images/gallery/rv-1.jpg' | resize({ width: 406, height: 406, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-1.jpg' | resize({ width: 406, height: 406, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-1.jpg' | resize({ width: 406, height: 406, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building1.jpg"
-                        alt="building"
+                        src="/assets/images/gallery/rv-1.jpg"
+                        alt="RV"
                         width="203"
                         height="203"
                     />
@@ -383,21 +413,51 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building2.jpg
+                            {% getUrl '/assets/images/gallery/rv-2.jpg' | resize({ width: 344, height: 344, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-2.jpg' | resize({ width: 344, height: 344, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-2.jpg' | resize({ width: 344, height: 344, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building2.jpg
+                            {% getUrl '/assets/images/gallery/rv-2.jpg' | resize({ width: 414, height: 414, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-2.jpg' | resize({ width: 414, height: 414, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-2.jpg' | resize({ width: 414, height: 414, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building2.jpg"
-                        alt="building"
+                        src="/assets/images/gallery/rv-2.jpg"
+                        alt="rv"
                         width="207"
                         height="207"
                     />
@@ -407,20 +467,50 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building3.jpg
+                            {% getUrl '/assets/images/gallery/rv-3.jpg' | resize({ width: 354, height: 354, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-3.jpg' | resize({ width: 354, height: 354, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-3.jpg' | resize({ width: 354, height: 354, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building3.jpg
+                            {% getUrl '/assets/images/gallery/rv-3.jpg' | resize({ width: 428, height: 428, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-3.jpg' | resize({ width: 428, height: 428, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-3.jpg' | resize({ width: 428, height: 428, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building3.jpg"
+                        src="/assets/images/gallery/rv-3.jpg"
                         alt="building"
                         width="214"
                         height="214"
@@ -431,21 +521,51 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building4.jpg
+                            {% getUrl '/assets/images/gallery/rv-4.jpg' | resize({ width: 370, height: 370, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-4.jpg' | resize({ width: 370, height: 370, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-4.jpg' | resize({ width: 370, height: 370, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building4.jpg
+                            {% getUrl '/assets/images/gallery/rv-4.jpg' | resize({ width: 446, height: 446, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-4.jpg' | resize({ width: 446, height: 446, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-4.jpg' | resize({ width: 446, height: 446, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building4.jpg"
-                        alt="building"
+                        src="/assets/images/gallery/rv-4.jpg"
+                        alt="rv"
                         width="223"
                         height="223"
                     />
@@ -455,20 +575,50 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building5.jpg
+                            {% getUrl '/assets/images/gallery/rv-5.jpg' | resize({ width: 476, height: 476, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-5.jpg' | resize({ width: 476, height: 476, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-5.jpg' | resize({ width: 476, height: 476, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building5.jpg
+                            {% getUrl '/assets/images/gallery/rv-5.jpg' | resize({ width: 574, height: 574, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-5.jpg' | resize({ width: 574, height: 574, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-5.jpg' | resize({ width: 574, height: 574, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building5.jpg"
+                        src="/assets/images/gallery/rv-5.jpg"
                         alt="building"
                         width="287"
                         height="287"
@@ -479,21 +629,51 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building6.jpg
+                            {% getUrl '/assets/images/gallery/rv-6.jpg' | resize({ width: 336, height: 336, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-6.jpg' | resize({ width: 336, height: 336, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-6.jpg' | resize({ width: 336, height: 336, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building6.jpg
+                            {% getUrl '/assets/images/gallery/rv-6.jpg' | resize({ width: 406, height: 406, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-6.jpg' | resize({ width: 406, height: 406, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-6.jpg' | resize({ width: 406, height: 406, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building6.jpg"
-                        alt="building"
+                        src="/assets/images/gallery/rv-6.jpg"
+                        alt="rv"
                         width="203"
                         height="203"
                     />
@@ -503,21 +683,51 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building7.jpg
+                            {% getUrl '/assets/images/gallery/rv-7.jpg' | resize({ width: 338, height: 338, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-7.jpg' | resize({ width: 338, height: 338, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-7.jpg' | resize({ width: 338, height: 338, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building7.jpg
+                            {% getUrl '/assets/images/gallery/rv-7.jpg' | resize({ width: 408, height: 408, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-7.jpg' | resize({ width: 408, height: 408, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-7.jpg' | resize({ width: 408, height: 408, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building7.jpg"
-                        alt="building"
+                        src="/assets/images/gallery/rv-7.jpg"
+                        alt="class b van"
                         width="204"
                         height="204"
                     />
@@ -527,21 +737,51 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building8.jpg
+                            {% getUrl '/assets/images/gallery/rv-8.jpg' | resize({ width: 370, height: 370, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-8.jpg' | resize({ width: 370, height: 370, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-8.jpg' | resize({ width: 370, height: 370, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <!--Tablet and above Image-->
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building8.jpg
+                            {% getUrl '/assets/images/gallery/rv-8.jpg' | resize({ width: 446, height: 446, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-8.jpg' | resize({ width: 446, height: 446, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/gallery/rv-8.jpg' | resize({ width: 446, height: 446, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/building8.jpg"
-                        alt="building"
+                        src="/assets/images/gallery/rv-8.jpg"
+                        alt="pull trailer"
                         width="223"
                         height="223"
                     />
