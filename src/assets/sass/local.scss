@@ -222,6 +222,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-2291 {
+            background-color: var(--medium);
             .cs-title,
             .cs-text,
             .cs-h3,
@@ -239,7 +240,7 @@
 
             .cs-features,
             .cs-box {
-                background-color: var(--medium);
+                background-color: var(--accent);
             }
         }
     }

@@ -192,6 +192,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-2291 {
+    background-color: var(--medium);
+  }
   body.dark-mode #sbs-2291 .cs-title,
   body.dark-mode #sbs-2291 .cs-text,
   body.dark-mode #sbs-2291 .cs-h3,
@@ -207,7 +210,7 @@
   }
   body.dark-mode #sbs-2291 .cs-features,
   body.dark-mode #sbs-2291 .cs-box {
-    background-color: var(--medium);
+    background-color: var(--accent);
   }
 }
 /*-- -------------------------- -->
