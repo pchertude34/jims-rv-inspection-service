@@ -9,6 +9,7 @@
     #sbs-2291 {
         padding: var(--sectionPadding);
         overflow: hidden;
+        background-color: var(--light);
 
         .cs-container {
             width: 100%;
@@ -129,7 +130,7 @@
             /* 24px - 32px */
             padding: clamp(1.5rem, 3vw, 2rem);
             border-radius: var(--borderRounded);
-            background-color: var(--secondaryLight);
+            background-color: var(--white);
             display: inline-flex;
             flex-direction: column;
             justify-content: center;

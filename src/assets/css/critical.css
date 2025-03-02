@@ -290,7 +290,7 @@
 @media only screen and (min-width: 0rem) {
   #services-1646 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    background-color: var(--lighter);
     overflow: hidden;
     position: relative;
     z-index: 1;
