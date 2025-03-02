@@ -419,6 +419,9 @@
   body.dark-mode #services-1646 .cs-item-text {
     opacity: 0.8;
   }
+  body.dark-mode #services-1646 .cs-icon {
+    filter: invert(1);
+  }
 }
 
 /*# sourceMappingURL=critical.css.map */
