@@ -1,0 +1,186 @@
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1388">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Serving Portland, Oregon & Beyond</h2>
+            <p class="cs-text">
+                Whether you’re buying, selling, or protecting your RV
+                investment, Jim is here to help. Based in Portland, Oregon, Jim
+                proudly serves RV owners across Oregon and Washington. Reach out
+                today to schedule your inspection or ask questions — your peace
+                of mind is just a call or click away.
+            </p>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img
+                            aria-hidden="true"
+                            src="/assets/icons/telephone.svg"
+                            alt="phone icon"
+                            class="cs-icon"
+                            width="40"
+                            height="40"
+                            decoding="async"
+                        />
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Call / Text</span>
+                        <a
+                            href="tel:{{ client.phoneForTel }}
+                      "
+                            class="cs-link"
+                            >{{ client.phoneFormatted }}
+                        </a>
+                    </div>
+                </li>
+
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img
+                            aria-hidden="true"
+                            src="/assets/icons/mail.svg"
+                            alt="address icon"
+                            class="cs-icon"
+                            width="40"
+                            height="40"
+                            decoding="async"
+                        />
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Email</span>
+                        <a href="mailto:{{ client.email }}" class="cs-link"
+                            >{{ client.email }}</a
+                        >
+                    </div>
+                </li>
+
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img
+                            aria-hidden="true"
+                            src="/assets/icons/pin.svg"
+                            alt="location icon"
+                            class="cs-icon"
+                            width="40"
+                            height="40"
+                            decoding="async"
+                        />
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Current Service Area</span>
+                        <span
+                            >{{ client.location.city }},
+                            {{ client.location.state }} and surrounding
+                            areas</span
+                        >
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Form-->
+        <form
+            class="cs-form"
+            id="cs-form-1388"
+            name="Contact Form"
+            method="post"
+            netlify
+            netlify-honeypot="bot-field"
+        >
+            <h3 class="cs-h3">Contact Us</h3>
+            <label class="hidden">
+                Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+            <label class="cs-label">
+                Name *
+                <input
+                    class="cs-input"
+                    required
+                    type="text"
+                    id="name-1388"
+                    name="name"
+                    placeholder="Name"
+                />
+            </label>
+            <label class="cs-label cs-email">
+                Email *
+                <input
+                    class="cs-input"
+                    required
+                    type="email"
+                    id="email-1388"
+                    name="email"
+                    placeholder="Email"
+                />
+            </label>
+            <label class="cs-label cs-phone">
+                Phone *
+                <input
+                    class="cs-input"
+                    required
+                    type="string"
+                    id="phone-1388"
+                    name="phone"
+                    placeholder="Phone"
+                />
+            </label>
+            <label class="cs-label">
+                Inspection Type*
+                <select class="cs-input" id="rv-type" name="RV Type" required>
+                    <option value="Pre-Purchase Inspection">
+                        Pre-Purchase Inspection
+                    </option>
+                    <option value="Seller Inspection">Seller Inspection</option>
+                    <option value="Warranty & Insurance Inspection">
+                        Warranty & Insurance Inspection
+                    </option>
+                    <option value="Essential Systems Inspection">
+                        Essential Systems Inspection
+                    </option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+            <label class="cs-label">
+                Image
+
+                <input
+                    type="file"
+                    id="file-upload"
+                    name="RV Image"
+                    placeholder="RV Image"
+                />
+                <div
+                    class="cs-file-upload"
+                    tabindex="0"
+                    role="button"
+                    aria-haspopup="true"
+                >
+                    Upload Image
+                </div>
+                <div class="cs-file-upload-help-text" id="file-input-help-text">
+                    Choose a file (Max 15MB)
+                </div>
+            </label>
+            <label class="cs-label">
+                Message
+                <textarea
+                    class="cs-input cs-textarea"
+                    required
+                    name="Message"
+                    id="message-1388"
+                    placeholder="Write message..."
+                ></textarea>
+            </label>
+            <button
+                id="form-submit-button"
+                class="cs-button-solid cs-submit"
+                type="submit"
+            >
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>

@@ -14,6 +14,8 @@ eleventyNavigation:
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css" />
     <link rel="stylesheet" href="/assets/css/critical.css" />
+    <link rel="stylesheet" href="/assets/css/contact-form.css" />
+    <script src="/assets/js/file-upload.js" defer></script>
 
     <!-- Script for Netlify Identity -->
     <script
@@ -792,7 +794,7 @@ eleventyNavigation:
                         class="cs-waves"
                         loading="lazy"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/svg-waves.svg"
+                        src="/assets/images/waves.svg"
                         alt="stripes"
                         width="650"
                         height="933"
@@ -1031,5 +1033,5 @@ eleventyNavigation:
         </div>
     </section>
 
-    {% include 'components/cta.html' %}
+    {% include 'components/contact-form.html' %}
 {% endblock %}
