@@ -18,19 +18,18 @@
                     />
                     {{ client.phoneFormatted }}
                 </a>
-                {#
-          <a href="mailto:{{client.email}}" class="cs-top-link">
-            <img
-              class="cs-link-icon"
-              src="/assets/icons/mail.svg"
-              alt="mail"
-              width="20"
-              height="20"
-              aria-hidden="true"
-              decoding="async" />
-            {{ client.email}}
-          </a>
-          #}
+                <a href="mailto:{{ client.email }}" class="cs-top-link">
+                    <img
+                        class="cs-link-icon"
+                        src="/assets/icons/mail.svg"
+                        alt="mail"
+                        width="20"
+                        height="20"
+                        aria-hidden="true"
+                        decoding="async"
+                    />
+                    {{ client.email }}
+                </a>
             </div>
             <div class="cs-top-social">
                 <a
@@ -53,15 +52,16 @@
     </div>
     <div class="cs-container">
         <!--Nav Logo-->
-        <a href="/" class="cs-logo" aria-label="back to home">
-            <img
+        <a href="/" class="cs-logo cs-logo-text" aria-label="back to home">
+            {# <img
                 src="/assets/images/logo-small.svg"
                 alt="logo"
                 width="72"
                 height="72"
                 aria-hidden="true"
                 decoding="async"
-            />
+            /> #}
+            Jim's RV Inspection Services
         </a>
         <!--Navigation List-->
         <nav class="cs-nav" role="navigation">

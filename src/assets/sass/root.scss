@@ -465,6 +465,13 @@
             gap: calc(8 / 16 * 1rem);
         }
 
+        .cs-logo-text {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--headerColor);
+            text-decoration: none;
+        }
+
         .cs-link-icon {
             width: calc(16 / 16 * 1rem);
             height: auto;
@@ -864,6 +871,14 @@
             }
         }
 
+        .cs-logo-text {
+            font-size: 1.2rem;
+            font-weight: 900;
+            color: var(--headerColor);
+            line-height: 1em;
+            text-decoration: none;
+        }
+
         .cs-ul-wrapper {
             /* absolutely positioned to be dead center */
             position: absolute;
@@ -973,6 +988,9 @@
 
             .cs-ul-wrapper {
                 background-color: var(--grayDark);
+            }
+            .cs-logo-text {
+                color: var(--bodyTextColorWhite);
             }
         }
     }

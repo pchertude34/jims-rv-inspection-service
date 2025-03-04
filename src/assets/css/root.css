@@ -355,6 +355,12 @@
     align-items: center;
     gap: 0.5rem;
   }
+  #cs-navigation .cs-logo-text {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--headerColor);
+    text-decoration: none;
+  }
   #cs-navigation .cs-link-icon {
     width: 1rem;
     height: auto;
@@ -695,6 +701,13 @@
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
+  #cs-navigation .cs-logo-text {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--headerColor);
+    line-height: 1em;
+    text-decoration: none;
+  }
   #cs-navigation .cs-ul-wrapper {
     /* absolutely positioned to be dead center */
     position: absolute;
@@ -787,6 +800,9 @@
   }
   body.dark-mode #cs-navigation .cs-ul-wrapper {
     background-color: var(--grayDark);
+  }
+  body.dark-mode #cs-navigation .cs-logo-text {
+    color: var(--bodyTextColorWhite);
   }
 }
 /*-- -------------------------- -->
