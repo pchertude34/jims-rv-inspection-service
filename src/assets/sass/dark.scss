@@ -40,6 +40,13 @@
         .dark {
             display: block !important;
         }
+
+        .cs-button-solid {
+            background-color: var(--secondary);
+            &:hover {
+                background-color: var(--secondaryDark);
+            }
+        }
     }
 
     .dark {

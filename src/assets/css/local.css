@@ -504,6 +504,9 @@
   body.dark-mode #logos-1430 .cs-logo {
     filter: invert(1) brightness(10000%);
   }
+  body.dark-mode #logos-1430 .cs-logo-rv-help {
+    filter: brightness(10000%);
+  }
   body.dark-mode #logos-1430 .cs-background img {
     opacity: 0.05;
   }
@@ -618,10 +621,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #reviews-64 {
-    background: rgba(0, 0, 0, 0.2);
-  }
-  body.dark-mode #reviews-64 .cs-topper {
-    color: var(--primaryLight);
+    background: var(--dark);
   }
   body.dark-mode #reviews-64 .cs-title,
   body.dark-mode #reviews-64 .cs-text,

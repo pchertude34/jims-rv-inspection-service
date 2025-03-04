@@ -586,6 +586,10 @@
                 filter: invert(1) brightness(10000%);
             }
 
+            .cs-logo-rv-help {
+                filter: brightness(10000%);
+            }
+
             .cs-background {
                 img {
                     opacity: 0.05;
@@ -720,11 +724,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #reviews-64 {
-            background: rgba(0, 0, 0, 0.2);
-
-            .cs-topper {
-                color: var(--primaryLight);
-            }
+            background: var(--dark);
 
             .cs-title,
             .cs-text,
