@@ -1477,6 +1477,14 @@
             flex-direction: column;
             grid-column: span 4;
         }
+
+        .cs-logo-text {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--bodyTextColorWhite);
+            line-height: 1em;
+            text-decoration: none;
+        }
     }
 }
 
@@ -1485,6 +1493,10 @@
     body.dark-mode {
         #cs-footer-1783 {
             background-color: var(--accent);
+
+            .cs-logo-text {
+                color: var(--bodyTextColorWhite);
+            }
         }
     }
 }

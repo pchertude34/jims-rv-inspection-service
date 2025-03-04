@@ -1221,11 +1221,21 @@
     flex-direction: column;
     grid-column: span 4;
   }
+  #cs-footer-1783 .cs-logo-text {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--bodyTextColorWhite);
+    line-height: 1em;
+    text-decoration: none;
+  }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cs-footer-1783 {
     background-color: var(--accent);
+  }
+  body.dark-mode #cs-footer-1783 .cs-logo-text {
+    color: var(--bodyTextColorWhite);
   }
 }
 
