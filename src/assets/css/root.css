@@ -224,7 +224,7 @@
   #dark-mode-toggle {
     z-index: 1000;
     position: absolute;
-    top: 0.625rem;
+    top: 1.125rem;
     right: 4.375rem;
     display: block;
     border: none;
@@ -508,6 +508,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
     transition: transform 0.6s;
   }
   #cs-navigation .cs-toggle.cs-active {
