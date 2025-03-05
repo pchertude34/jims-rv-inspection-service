@@ -483,6 +483,16 @@
     /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
     object-fit: contain;
   }
+  #cs-navigation .cs-logo-text {
+    font-size: 1.125rem;
+    line-height: 1em;
+    font-weight: 700;
+    color: var(--headerColor);
+    display: flex;
+    text-decoration: none;
+    justify-content: start;
+    width: 100%;
+  }
   #cs-navigation .cs-nav {
     order: 2;
   }
@@ -1005,16 +1015,11 @@
     object-fit: contain;
   }
   #cs-navigation .cs-logo-text {
-    font-size: 1.5rem;
-    line-height: 1.5em;
+    font-size: 2rem;
+    line-height: 1em;
+    font-weight: 700;
     color: var(--headerColor);
     text-decoration: none;
-    display: block;
-    position: relative;
-    transition: color 0.3s;
-  }
-  #cs-navigation .cs-logo-text:hover {
-    color: var(--primary);
   }
   #cs-navigation .cs-ul {
     width: 100%;

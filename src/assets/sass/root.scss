@@ -611,6 +611,17 @@
             }
         }
 
+        .cs-logo-text {
+            font-size: calc(18 / 16 * 1rem);
+            line-height: 1em;
+            font-weight: 700;
+            color: var(--headerColor);
+            display: flex;
+            text-decoration: none;
+            justify-content: start;
+            width: 100%;
+        }
+
         .cs-nav {
             order: 2;
         }
@@ -1278,17 +1289,11 @@
         }
 
         .cs-logo-text {
-            font-size: calc(24 / 16 * 1rem);
-            line-height: 1.5em;
+            font-size: calc(32 / 16 * 1rem);
+            line-height: 1em;
+            font-weight: 700;
             color: var(--headerColor);
             text-decoration: none;
-            display: block;
-            position: relative;
-            transition: color 0.3s;
-
-            &:hover {
-                color: var(--primary);
-            }
         }
 
         .cs-ul {
