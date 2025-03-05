@@ -1,0 +1,302 @@
+/*-- -------------------------- -->
+<---        Content Page        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes floatAnimation2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  #content-page-1532 {
+    padding: var(--sectionPadding);
+    background-color: var(--lighter);
+    /* clips the wave background from causing overflow issues when it goes off screen */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #content-page-1532 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 40px - 64px */
+    gap: clamp(2.5rem, 4vw, 4rem);
+    position: relative;
+  }
+  #content-page-1532 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 46.125rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #content-page-1532 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #content-page-1532 h2,
+  #content-page-1532 h3,
+  #content-page-1532 h4,
+  #content-page-1532 h5,
+  #content-page-1532 h6 {
+    font-weight: 700;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+  }
+  #content-page-1532 h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  #content-page-1532 h3 {
+    font-size: 1.5rem;
+  }
+  #content-page-1532 h4,
+  #content-page-1532 h5,
+  #content-page-1532 h6 {
+    font-size: 1.25rem;
+  }
+  #content-page-1532 .cs-button-solid {
+    margin-bottom: 2rem;
+  }
+  #content-page-1532 .cs-no-margin {
+    margin: 0;
+  }
+  #content-page-1532 .cs-color {
+    color: var(--primary);
+  }
+  #content-page-1532 p {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0 0 1rem 0;
+    color: var(--bodyTextColor);
+  }
+  #content-page-1532 p a {
+    font-size: inherit;
+    line-height: inherit;
+    text-decoration: underline;
+    color: var(--primary);
+    filter: brightness(120%);
+  }
+  #content-page-1532 ol,
+  #content-page-1532 ul {
+    padding-left: 1.5rem;
+    margin: 0 0 2rem 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #content-page-1532 ol > ul,
+  #content-page-1532 ul > ul {
+    margin-bottom: 0px;
+  }
+  #content-page-1532 ul li {
+    list-style: none;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+    position: relative;
+  }
+  #content-page-1532 ul li:before {
+    /* bullet */
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-top: 0.5rem;
+    background: var(--primary);
+    border-radius: 1px;
+    display: block;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #content-page-1532 img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  #content-page-1532 .cs-image-group {
+    width: 32.625em;
+    height: 33.75em;
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+  #content-page-1532 .cs-background {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--borderRounded);
+    /* clips the corners of the children around the border radius */
+    overflow: hidden;
+    /* makes it cover the parent dimensions */
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #content-page-1532 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* makes it cover the parent like a backgorund image */
+    object-fit: cover;
+    display: block;
+  }
+  #content-page-1532 .cs-floater {
+    width: 44.375em;
+    height: auto;
+    position: absolute;
+    right: 9.375em;
+    top: 25em;
+    z-index: -1;
+    animation-name: floatAnimation2;
+    animation-duration: 14s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #content-page-1532 .cs-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--bodyTextColor);
+    margin: 2rem 0;
+  }
+  #content-page-1532 .cs-section-description {
+    margin-bottom: 1.5rem;
+  }
+  #content-page-1532 .cs-price__header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    align-items: baseline;
+  }
+  #content-page-1532 .cs-price__header h4 {
+    margin-bottom: 0px;
+    margin-right: 0.5rem;
+  }
+  #content-page-1532 .cs-price-section {
+    width: 100%;
+  }
+  #content-page-1532 .cs-price__container {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  #content-page-1532 .cs-price__container p {
+    margin-left: 0.5rem;
+    margin-bottom: 0px;
+  }
+  #content-page-1532 .cs-price {
+    flex-grow: 1;
+    text-align: right;
+    display: flex;
+    font-weight: 700;
+  }
+  #content-page-1532 .cs-price::before {
+    content: "";
+    background: repeating-linear-gradient(to right, currentColor, currentColor 1px, transparent 2px, transparent 4px);
+    height: 1px;
+    flex-grow: 1;
+    display: inline-block;
+    margin-top: 1em;
+    margin-right: 0.5rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #content-page-1532 .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #content-page-1532 .cs-content {
+    width: 60%;
+    max-width: 43.375rem;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #content-page-1532 .cs-image-group {
+    font-size: min(1.3vw, 1em);
+    display: block;
+  }
+}
+/* Desktop - 1200px */
+@media only screen and (min-width: 75rem) {
+  #content-page-1532 .cs-content {
+    width: 53%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #content-page-1532 {
+    background-color: var(--dark);
+  }
+  body.dark-mode #content-page-1532 .cs-title,
+  body.dark-mode #content-page-1532 .cs-text,
+  body.dark-mode #content-page-1532 h2,
+  body.dark-mode #content-page-1532 h3,
+  body.dark-mode #content-page-1532 h4,
+  body.dark-mode #content-page-1532 h5,
+  body.dark-mode #content-page-1532 h6,
+  body.dark-mode #content-page-1532 li,
+  body.dark-mode #content-page-1532 p {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #content-page-1532 .cs-color,
+  body.dark-mode #content-page-1532 a {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #content-page-1532 p,
+  body.dark-mode #content-page-1532 li {
+    color: #ebebeb;
+  }
+  body.dark-mode #content-page-1532 ul li:before {
+    background: var(--secondary);
+  }
+  body.dark-mode #content-page-1532 .cs-floater {
+    opacity: 0.1;
+  }
+  body.dark-mode #content-page-1532 .cs-divider {
+    background-color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #content-page-1532 .cs-price {
+    color: var(--bodyTextColorWhite);
+  }
+}
+
+/*# sourceMappingURL=content.css.map */

@@ -1,0 +1,86 @@
+---
+title: "RV Care Plus | Mobile RV Repair in Colorado Springs | Services"
+description: "Explore RV Care Plus services, including preventive maintenance, on-site repairs, tank cleaning, and handyman services for stationary and mobile RVs in Colorado Springs. Reliable, expert care at your location."
+permalink: "inspections/"
+page:
+  title: Services
+eleventyNavigation:
+  key: Services/
+  order: 200
+---
+
+{% extends "layouts/base.html" %}
+{% block head %}
+  <link rel="stylesheet" href="/assets/css/content.css" />
+  <link
+    rel="preloadImg"
+    href="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+    as="image" />
+  <link
+    rel="preloadImg"
+    href="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
+    as="image" />
+{% endblock %}
+{% block body %}
+  {% include 'components/banner.html' %}
+
+  <!-- ============================================ -->
+  <!--                 Content Page                 -->
+  <!-- ============================================ -->
+
+  <!-- ============================================ 
+    This Stitch is used for content heavy interior pages
+    that have no design or layout.  Often times these are 
+    content silos where you talk extensively about a topic
+    to educate your visitors and rank on Google for the 
+    content.  These are great for pages that have a TON
+    of content.  Design isn't important here, it's all 
+    about making the content accessible and easy to read.
+================================================= -->
+
+  <section id="content-page-1532">
+    <div class="cs-container">
+      <div class="cs-image-group">
+        <picture class="cs-background">
+          <!--Tablet Image-->
+          <source
+            media="(max-width: 1024px)"
+            srcset="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | avif %}"
+            type="image/avif" />
+          <source
+            media="(max-width: 1024px)"
+            srcset="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | webp %}"
+            type="image/webp" />
+          <source
+            media="(max-width: 1024px)"
+            srcset="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
+            type="image/jpeg" />
+          <!--Desktop Image-->
+          <source
+            media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | avif %}"
+            type="image/avif" />
+          <source
+            media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | webp %}"
+            type="image/webp" />
+          <source
+            media="(min-width: 1024px)"
+            srcset="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+            type="image/jpeg" />
+          <img
+            src="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+            alt="tools"
+            width="522"
+            height="540"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true" />
+        </picture>
+      </div>
+      <div class="cs-content">
+       </div>
+  </section>
+
+  {% include 'components/cta.html' %}
+{% endblock %}
