@@ -326,22 +326,52 @@ eleventyNavigation:
                     <source
                         media="(max-width: 600px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction3.jpg
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1136, height: 1062, position: 'attention' }) | avif %}
                         "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1136, height: 1062, position: 'attention' }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 600px)"
+                        srcset="
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1136, height: 1062, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
+                    />
+                    <!--Tablet Image-->
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1260, height: 1260, position: 'attention' }) | avif %}
+                        "
+                        type="image/avif"
                     />
                     <source
                         media="(min-width: 601px)"
                         srcset="
-                            https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction3.jpg
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1260, height: 1260, position: 'attention' }) | webp %}
                         "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 601px)"
+                        srcset="
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1260, height: 1260, position: 'attention' }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
-                        loading="lazy"
+                        src="{% getUrl '/assets/images/about-us.jpg' | resize({ width: 630, height: 630, position: 'attention' }) | jpeg %}"
+                        alt="traveling rv"
+                        width="2250"
+                        height="1500"
                         decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/construction3.jpg"
-                        alt="meeting"
-                        width="630"
-                        height="630"
                         aria-hidden="true"
                     />
                 </picture>
@@ -955,27 +985,6 @@ eleventyNavigation:
                     decoding="async"
                     aria-hidden="true"
                 />
-                {# <source
-                    media="(max-width: 600px)"
-                    srcset="
-                        https://csimg.nyc3.digitaloceanspaces.com/SideBySide/medical-m.jpg
-                    "
-                />
-                <source
-                    media="(min-width: 601px)"
-                    srcset="
-                        https://csimg.nyc3.digitaloceanspaces.com/SideBySide/medical.jpg
-                    "
-                />
-                <img
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/medical.jpg"
-                    alt="body builder"
-                    width="500"
-                    height="552"
-                    aria-hidden="true"
-                /> #}
             </picture>
             <!-- Right Content Section-->
             <div class="cs-content">
