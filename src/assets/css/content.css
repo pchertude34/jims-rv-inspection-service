@@ -178,19 +178,6 @@
     object-fit: cover;
     display: block;
   }
-  #content-page-1532 .cs-floater {
-    width: 44.375em;
-    height: auto;
-    position: absolute;
-    right: 9.375em;
-    top: 25em;
-    z-index: -1;
-    animation-name: floatAnimation2;
-    animation-duration: 14s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-  }
   #content-page-1532 .cs-divider {
     width: 100%;
     height: 1px;
@@ -235,6 +222,11 @@
     display: inline-block;
     margin-top: 1em;
     margin-right: 0.5rem;
+  }
+  #content-page-1532 .cs-subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
   }
 }
 /* Tablet - 768px */
@@ -295,6 +287,9 @@
     background-color: var(--bodyTextColorWhite);
   }
   body.dark-mode #content-page-1532 .cs-price {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #content-page-1532 .cs-subtitle {
     color: var(--bodyTextColorWhite);
   }
 }
