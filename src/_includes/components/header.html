@@ -2,6 +2,10 @@
 <!--                 Navigation                   -->
 <!-- ============================================ -->
 
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
 <header id="cs-navigation">
     <div class="cs-top-bar">
         <div class="cs-top-container">
@@ -10,39 +14,57 @@
                     <img
                         class="cs-link-icon"
                         src="/assets/icons/telephone.svg"
-                        alt="phone"
+                        alt="logo"
                         width="16"
                         height="16"
                         aria-hidden="true"
                         decoding="async"
                     />
-                    {{ client.phoneFormatted }}
+                    Call us: {{ client.phoneFormatted }}
                 </a>
                 <a href="mailto:{{ client.email }}" class="cs-top-link">
                     <img
                         class="cs-link-icon"
                         src="/assets/icons/mail.svg"
-                        alt="mail"
+                        alt="logo"
                         width="20"
                         height="20"
                         aria-hidden="true"
                         decoding="async"
                     />
-                    {{ client.email }}
+                    Email us: {{ client.email }}
                 </a>
             </div>
             <div class="cs-top-social">
-                <a
-                    href="{{ client.socials.facebook }}"
-                    class="cs-social-link"
-                    aria-label="Roving RV Repair Facebook page"
-                >
+                <a href="" class="cs-social-link">
                     <img
                         class="cs-social-icon"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-lgrey.svg"
-                        alt="facebook"
-                        width="16"
-                        height="16"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-grey.svg"
+                        alt="logo"
+                        width="12"
+                        height="12"
+                        aria-hidden="true"
+                        decoding="async"
+                    />
+                </a>
+                <a href="" class="cs-social-link">
+                    <img
+                        class="cs-social-icon"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twit-grey.svg"
+                        alt="logo"
+                        width="12"
+                        height="12"
+                        aria-hidden="true"
+                        decoding="async"
+                    />
+                </a>
+                <a href="" class="cs-social-link">
+                    <img
+                        class="cs-social-icon"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-grey.svg"
+                        alt="logo"
+                        width="12"
+                        height="12"
                         aria-hidden="true"
                         decoding="async"
                     />
@@ -52,12 +74,12 @@
     </div>
     <div class="cs-container">
         <!--Nav Logo-->
-        <a href="/" class="cs-logo cs-logo-text" aria-label="back to home">
+        <a href="" class="cs-logo cs-logo-text" aria-label="back to home">
             {# <img
-                src="/assets/images/logo-small.svg"
+                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Logos/consulting-logo.svg"
                 alt="logo"
-                width="72"
-                height="72"
+                width="197"
+                height="43"
                 aria-hidden="true"
                 decoding="async"
             /> #}
@@ -73,9 +95,9 @@
                     <span class="cs-line cs-line3" aria-hidden="true"></span>
                 </div>
             </button>
-            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how many there are-->
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
             <div class="cs-ul-wrapper">
-                <ul id="cs-expanded" class="cs-ul">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
                         <a
                             href="/"
@@ -92,23 +114,39 @@
                             About
                         </a>
                     </li>
-                    <li class="cs-li">
-                        <a
-                            href="/inspections/"
-                            class="cs-li-link {% if page.url == '/inspections/' %}cs-active{% endif %}"
+                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                    <li class="cs-li cs-dropdown" tabindex="0">
+                        <span
+                            class="cs-li-link {% if page.url == '/services/*' %}cs-active{% endif %}"
                         >
-                            Inspections
-                        </a>
+                            Services
+                            <img
+                                class="cs-drop-icon"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/chev-down.svg"
+                                alt="dropdown icon"
+                                width="15"
+                                height="15"
+                                decoding="async"
+                                aria-hidden="true"
+                            />
+                        </span>
+                        <ul class="cs-drop-ul">
+                            <li class="cs-drop-li">
+                                <a
+                                    href="/services/inspections"
+                                    class="cs-li-link cs-drop-link"
+                                    >Inspections</a
+                                >
+                            </li>
+                            <li class="cs-drop-li">
+                                <a
+                                    href="/services/exterior-services"
+                                    class="cs-li-link cs-drop-link"
+                                    >Exterior Services</a
+                                >
+                            </li>
+                        </ul>
                     </li>
-                    <li class="cs-li">
-                        <a
-                            href="/exterior-services/"
-                            class="cs-li-link {% if page.url == '/exterior-services/' %}cs-active{% endif %}"
-                        >
-                            Exterior Services
-                        </a>
-                    </li>
-
                     <li class="cs-li">
                         <a
                             href="/contact/"
@@ -121,7 +159,7 @@
             </div>
         </nav>
         <a href="/contact/" class="cs-button-solid cs-nav-button"
-            >Schedule Service</a
+            >Schedule Inspection</a
         >
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <button id="dark-mode-toggle" aria-label="dark mode toggle">
@@ -129,7 +167,7 @@
                 class="cs-moon"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 480 480"
-                style="enable-background: new 0 0 480 480"
+                style="enable-background:new 0 0 480 480"
                 xml:space="preserve"
             >
                 <path
