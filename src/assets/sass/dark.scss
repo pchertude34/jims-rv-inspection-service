@@ -41,6 +41,11 @@
             display: block !important;
         }
 
+        .cs-topper {
+            color: var(--tertiary);
+            background-color: var(--tertiaryOpaque);
+        }
+
         .cs-button-solid {
             background-color: var(--secondary);
             &:hover {

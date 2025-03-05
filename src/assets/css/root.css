@@ -46,7 +46,10 @@
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     font-weight: 700;
-    color: var(--tertiary);
+    color: var(--primary);
+    background-color: var(--primaryOpaque);
+    padding: 0.25rem 1rem;
+    border-radius: var(--borderRoundedSm);
     text-align: inherit;
   }
   .cs-title {
