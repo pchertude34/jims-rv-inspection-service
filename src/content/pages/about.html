@@ -15,12 +15,12 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/about.css" />
     <link
         rel="preloadImg"
-        href="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+        href="{% getUrl '/assets/images/about-us.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
         as="image"
     />
     <link
         rel="preloadImg"
-        href="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
+        href="{% getUrl '/assets/images/about-us.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
         as="image"
     />
 {% endblock %}
@@ -146,21 +146,21 @@ eleventyNavigation:
                     <source
                         media="(max-width: 1024px)"
                         srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | avif %}
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 712, height: 898 }) | avif %}
                         "
                         type="image/avif"
                     />
                     <source
                         media="(max-width: 1024px)"
                         srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | webp %}
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 712, height: 898 }) | webp %}
                         "
                         type="image/webp"
                     />
                     <source
                         media="(max-width: 1024px)"
                         srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | jpeg %}
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 712, height: 898 }) | jpeg %}
                         "
                         type="image/jpeg"
                     />
@@ -168,26 +168,26 @@ eleventyNavigation:
                     <source
                         media="(min-width: 1024px)"
                         srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | avif %}
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1024, height: 1080 }) | avif %}
                         "
                         type="image/avif"
                     />
                     <source
                         media="(min-width: 1024px)"
                         srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | webp %}
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1024, height: 1080 }) | webp %}
                         "
                         type="image/webp"
                     />
                     <source
                         media="(min-width: 1024px)"
                         srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}
+                            {% getUrl '/assets/images/about-us.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}
                         "
                         type="image/jpeg"
                     />
                     <img
-                        src="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+                        src="{% getUrl '/assets/images/about-us.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
                         alt="tools"
                         width="522"
                         height="540"
@@ -212,131 +212,5 @@ eleventyNavigation:
             </div>
         </div>
     </section>
-
-    {# <section id="content-page-1532">
-        <div class="cs-container">
-            <div class="cs-image-group">
-                <picture class="cs-background">
-                    <!--Tablet Image-->
-                    <source
-                        media="(max-width: 1024px)"
-                        srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | avif %}
-                        "
-                        type="image/avif"
-                    />
-                    <source
-                        media="(max-width: 1024px)"
-                        srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | webp %}
-                        "
-                        type="image/webp"
-                    />
-                    <source
-                        media="(max-width: 1024px)"
-                        srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | jpeg %}
-                        "
-                        type="image/jpeg"
-                    />
-                    <!--Desktop Image-->
-                    <source
-                        media="(min-width: 1024px)"
-                        srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | avif %}
-                        "
-                        type="image/avif"
-                    />
-                    <source
-                        media="(min-width: 1024px)"
-                        srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | webp %}
-                        "
-                        type="image/webp"
-                    />
-                    <source
-                        media="(min-width: 1024px)"
-                        srcset="
-                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}
-                        "
-                        type="image/jpeg"
-                    />
-                    <img
-                        src="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
-                        alt="tools"
-                        width="522"
-                        height="540"
-                        loading="lazy"
-                        decoding="async"
-                        aria-hidden="true"
-                    />
-                </picture>
-            </div>
-            <div class="cs-content">
-                <h1 class="cs-title">About Us</h1>
-                <h2>Experience You Can Trust. Service You Can Count On.</h2>
-                <p class="cs-text">
-                    At Jim's RV Inspections Services, we believe every RV buyer,
-                    seller, and owner deserves clear, honest information before
-                    making important decisions. That’s why Jim, our owner and
-                    lead inspector, brings his years of hands-on experience and
-                    professional training to every inspection.
-                </p>
-                <p class="cs-text">
-                    Based in <b>Portland, Oregon</b>, Jim is a
-                    <b>certified NRVIA inspector</b> who has completed
-                    <b>over 400 inspections</b> since earning his certification
-                    in 2022. His expertise covers everything from essential
-                    systems like propane and plumbing to detailed exterior
-                    assessments, helping clients get a full picture of an RV’s
-                    condition.
-                </p>
-                <p class="cs-text">
-                    But it’s not just about identifying problems — Jim goes the
-                    extra mile by including estimated repair costs, giving you
-                    valuable context for negotiations, budgeting, or planning
-                    your next steps. Whether you’re buying your dream RV,
-                    preparing to sell, or filing a warranty or insurance claim,
-                    Jim is dedicated to giving you the knowledge and confidence
-                    you need.
-                </p>
-
-                <div class="cs-divider"></div>
-
-                <h2>Why Choose Us</h2>
-                <ul>
-                    <li>
-                        Certified by the National RV Inspectors Association
-                        (NRVIA)
-                    </li>
-                    <li>Locally owned and operated in Portland, Oregon</li>
-                    <li>Over 400 professional inspections completed</li>
-                    <li>
-                        Clear, unbiased reports with photos and repair estimates
-                    </li>
-                    <li>Serving all of Oregon and Washington</li>
-                </ul>
-
-                <div class="cs-divider"></div>
-
-                <h2>A Local Business with a Personal Touch</h2>
-                <p class="cs-text">
-                    When you work with Jim's RV Inspections Services, you’re not
-                    just hiring an inspector — you’re working with someone who
-                    understands the unique needs of RV owners in the Pacific
-                    Northwest. From the rainy climate’s effect on seals and
-                    roofs to the wear and tear of cross-country travel, Jim
-                    brings local knowledge and real-world experience to every
-                    inspection.
-                </p>
-                <p class="cs-text">
-                    At the end of the day, it’s about protecting your investment
-                    and helping you buy, sell, or own with confidence. That’s
-                    our commitment — every customer, every inspection, every
-                    time.
-                </p>
-            </div>
-        </div>
-    </section> #}
     {% include 'components/cta.html' %}
 {% endblock %}
