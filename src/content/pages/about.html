@@ -1,8 +1,9 @@
 ---
 title: "About | Code Stitch Web Designs"
 description: "Meta description for the page"
-preloadImg: "/assets/images/cabinets2.jpg"
 permalink: "about/"
+page:
+    title: About Us
 eleventyNavigation:
     key: About Us
     order: 200
@@ -11,121 +12,144 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css" />
+    <link rel="stylesheet" href="/assets/css/content.css" />
+    <link
+        rel="preloadImg"
+        href="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+        as="image"
+    />
+    <link
+        rel="preloadImg"
+        href="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | jpeg %}"
+        as="image"
+    />
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+    {% include 'components/banner.html' %}
 
-    <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source
-                media="(max-width: 600px)"
-                srcset="/assets/images/cabinets2-m.jpg"
-            />
-            <source
-                media="(min-width: 601px)"
-                srcset="/assets/images/cabinets2.jpg"
-            />
-            <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/images/cabinets2.jpg"
-                alt="kitchen cabinets"
-                loading="eager"
-                width="2500"
-                height="1667"
-            />
-        </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
+    <section id="content-page-1532">
         <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
+            <div class="cs-image-group">
+                <picture class="cs-background">
+                    <!--Tablet Image-->
                     <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/cabinets2-m.jpg"
+                        media="(max-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | avif %}
+                        "
+                        type="image/avif"
                     />
                     <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/cabinets2.jpg"
+                        media="(max-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(max-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 712, height: 898 }) | jpeg %}
+                        "
+                        type="image/jpeg"
+                    />
+                    <!--Desktop Image-->
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | avif %}
+                        "
+                        type="image/avif"
+                    />
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | webp %}
+                        "
+                        type="image/webp"
+                    />
+                    <source
+                        media="(min-width: 1024px)"
+                        srcset="
+                            {% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}
+                        "
+                        type="image/jpeg"
                     />
                     <img
-                        aria-hidden="true"
-                        decoding="async"
-                        src="/assets/images/cabinets2.jpg"
-                        alt="cabinets"
+                        src="{% getUrl '/assets/images/inspections.jpg' | resize({ width: 1024, height: 1080 }) | jpeg %}"
+                        alt="tools"
+                        width="522"
+                        height="540"
                         loading="lazy"
-                        width="400"
-                        height="563"
-                    />
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source
-                        media="(max-width: 600px)"
-                        srcset="/assets/images/construction-m.jpg"
-                    />
-                    <source
-                        media="(min-width: 601px)"
-                        srcset="/assets/images/construction.jpg"
-                    />
-                    <img
-                        aria-hidden="true"
                         decoding="async"
-                        src="/assets/images/construction.jpg"
-                        alt="house"
-                        loading="lazy"
-                        width="400"
-                        height="563"
+                        aria-hidden="true"
                     />
                 </picture>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+            <div class="cs-content">
+                <h1 class="cs-title">About Us</h1>
+                <h2>Experience You Can Trust. Service You Can Count On.</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    At Jim's RV Inspections Services, we believe every RV buyer,
+                    seller, and owner deserves clear, honest information before
+                    making important decisions. That’s why Jim, our owner and
+                    lead inspector, brings his years of hands-on experience and
+                    professional training to every inspection.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent
-                    Class officelan nonatoureanor mauris laoreet, iaculis libero
-                    quis. Curabitur et tempus eri consequat tincidunt turpis sit
-                    amet imperdiet. Praesent nonatourean olei aptent taciti
-                    sociosqu ad litora torquent per.
+                    Based in <b>Portland, Oregon</b>, Jim is a
+                    <b>certified NRVIA inspector</b> who has completed
+                    <b>over 400 inspections</b> since earning his certification
+                    in 2022. His expertise covers everything from essential
+                    systems like propane and plumbing to detailed exterior
+                    assessments, helping clients get a full picture of an RV’s
+                    condition.
                 </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet.
-                        Praesent Classei consequat tincidunt turpis sit amet
-                        imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img
-                        class="cs-quote-icon"
-                        loading="lazy"
-                        decoding="async"
-                        src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                        alt="gavel"
-                        width="136"
-                        height="77"
-                    />
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+                <p class="cs-text">
+                    But it’s not just about identifying problems — Jim goes the
+                    extra mile by including estimated repair costs, giving you
+                    valuable context for negotiations, budgeting, or planning
+                    your next steps. Whether you’re buying your dream RV,
+                    preparing to sell, or filing a warranty or insurance claim,
+                    Jim is dedicated to giving you the knowledge and confidence
+                    you need.
+                </p>
+
+                <div class="cs-divider"></div>
+
+                <h2>Why Choose Us</h2>
+                <ul>
+                    <li>
+                        Certified by the National RV Inspectors Association
+                        (NRVIA)
+                    </li>
+                    <li>Locally owned and operated in Portland, Oregon</li>
+                    <li>Over 400 professional inspections completed</li>
+                    <li>
+                        Clear, unbiased reports with photos and repair estimates
+                    </li>
+                    <li>Serving all of Oregon and Washington</li>
+                </ul>
+
+                <div class="cs-divider"></div>
+
+                <h2>A Local Business with a Personal Touch</h2>
+                <p class="cs-text">
+                    When you work with Jim's RV Inspections Services, you’re not
+                    just hiring an inspector — you’re working with someone who
+                    understands the unique needs of RV owners in the Pacific
+                    Northwest. From the rainy climate’s effect on seals and
+                    roofs to the wear and tear of cross-country travel, Jim
+                    brings local knowledge and real-world experience to every
+                    inspection.
+                </p>
+                <p class="cs-text">
+                    At the end of the day, it’s about protecting your investment
+                    and helping you buy, sell, or own with confidence. That’s
+                    our commitment — every customer, every inspection, every
+                    time.
+                </p>
             </div>
         </div>
     </section>
