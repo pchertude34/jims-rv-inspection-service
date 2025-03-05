@@ -65,6 +65,16 @@
     color: var(--headerColor);
     position: relative;
   }
+  #content-page-1532 .cs-title-sm {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 100%;
+    color: var(--headerColor);
+    position: relative;
+  }
   #content-page-1532 h2,
   #content-page-1532 h3,
   #content-page-1532 h4,
@@ -123,27 +133,6 @@
   #content-page-1532 ol > ul,
   #content-page-1532 ul > ul {
     margin-bottom: 0px;
-  }
-  #content-page-1532 ul li {
-    list-style: none;
-    color: var(--bodyTextColor);
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 0.75rem;
-    position: relative;
-  }
-  #content-page-1532 ul li:before {
-    /* bullet */
-    content: "";
-    width: 0.5rem;
-    height: 0.5rem;
-    margin-top: 0.5rem;
-    background: var(--primary);
-    border-radius: 1px;
-    display: block;
-    /* prevents flexbox from squishing it */
-    flex: none;
   }
   #content-page-1532 img {
     width: 100%;
@@ -277,9 +266,6 @@
   body.dark-mode #content-page-1532 li {
     color: #ebebeb;
   }
-  body.dark-mode #content-page-1532 ul li:before {
-    background: var(--secondary);
-  }
   body.dark-mode #content-page-1532 .cs-floater {
     opacity: 0.1;
   }
@@ -291,6 +277,49 @@
   }
   body.dark-mode #content-page-1532 .cs-subtitle {
     color: var(--bodyTextColorWhite);
+  }
+}
+/* Mobile - 360px */
+/* you can copy and paste these styles into the section CSS where you placed the #list-1113 HTML, or you can place it in your global stylesheet so you can reuse the HTML in any Side By Side section on your site. That way when you make changes to it, it will also change everywhere in the site */
+@media only screen and (min-width: 0rem) {
+  #list-1113 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  #list-1113 .cs-li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #list-1113 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.75rem;
+  }
+  #list-1113 .cs-li-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 39.375rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Dark Mode, copy and paste only the styles inside the #list-1113 brackets into your section's dark mode media query */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #list-1113 .cs-li-text,
+  body.dark-mode #list-1113 .cs-h3 {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #list-1113 .cs-li-text {
+    opacity: 0.8;
   }
 }
 
