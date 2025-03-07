@@ -230,9 +230,6 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #gallery-405 .cs-topper {
-    color: var(--primaryLight);
-  }
   body.dark-mode #gallery-405 .cs-title,
   body.dark-mode #gallery-405 .cs-text,
   body.dark-mode #gallery-405 .cs-button {
