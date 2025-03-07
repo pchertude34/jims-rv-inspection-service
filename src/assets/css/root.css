@@ -224,7 +224,7 @@
   #dark-mode-toggle {
     z-index: 1000;
     position: absolute;
-    top: 1.125rem;
+    top: 2.5px;
     right: 4.375rem;
     display: block;
     border: none;
@@ -282,17 +282,17 @@
     transform: translate(-50%, -150%);
   }
   #dark-mode-toggle {
-    width: 3rem;
-    height: 3rem;
-    padding: 0;
-    background: transparent;
-    border: none;
-    display: block;
-    position: absolute;
-    right: 5.625rem;
-    bottom: 1rem;
     z-index: 1000;
+    position: absolute;
+    top: 22px;
+    right: 4.375rem;
+    display: block;
+    border: none;
+    background: transparent;
+    height: 3rem;
+    width: 3rem;
     overflow: hidden;
+    padding: 0;
   }
   #dark-mode-toggle img,
   #dark-mode-toggle svg {
@@ -324,6 +324,7 @@
     position: relative;
     right: auto;
     bottom: auto;
+    top: 2.5px;
   }
 }
 /* Desktop - 1024px */
@@ -1105,6 +1106,7 @@
     align-items: center;
     min-height: 30vh;
     padding-top: 3.125rem;
+    margin-top: 86px;
   }
   #int-hero picture {
     z-index: -2;
