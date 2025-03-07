@@ -1,0 +1,403 @@
+---
+title: "About Jim's RV Inspection Services | Certified RV Inspector in Portland, OR | Call {{ client.phoneFormatted }}"
+description: "Learn more about Jim's RV Inspection Services, a certified RV inspector in Portland, Oregon. Over 400 inspections completed — helping RV buyers, sellers, and owners make informed decisions."
+permalink: "gallery/"
+page:
+    title: Gallery
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/gallery.css" />
+    <script src="/assets/js/gallery.js" defer></script>
+{% endblock %}
+
+{% block body %}
+    {% include 'components/banner.html' %}
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-405">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Portfolio</span>
+                <h2 class="cs-title">Some Work from Our Memorable Gallery</h2>
+                <div class="cs-button-group">
+                    <button class="cs-button" data-filter="one">
+                        5th Wheels
+                    </button>
+                    <button class="cs-button" data-filter="two">
+                        Travel Trailers
+                    </button>
+                    <button class="cs-button" data-filter="three">
+                        Class A Motorhomes
+                    </button>
+                    <button class="cs-button" data-filter="four">
+                        Class B Motorhomes
+                    </button>
+                    <button class="cs-button" data-filter="five">
+                        Class C Motorhomes
+                    </button>
+                    <button class="cs-button" data-filter="six">Campers</button>
+                </div>
+            </div>
+            <div class="cs-gallery-wrapper">
+                <!--5th Wheels-->
+                <div class="cs-gallery" data-category="one">
+                    {% for photo in photos.fifthwheel %}
+                        <picture class="cs-image">
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <!--Tablet Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  |resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="{{ photo }}"
+                                alt="gallery"
+                                width="305"
+                                height="400"
+                            />
+                        </picture>
+                    {% endfor %}
+                </div>
+                <!--Travel Trailers-->
+                <div class="cs-gallery" data-category="two">
+                    {% for photo in photos.traveltrailer %}
+                        <picture class="cs-image">
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <!--Tablet Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  |resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="{{ photo }}"
+                                alt="gallery"
+                                width="305"
+                                height="400"
+                            />
+                        </picture>
+                    {% endfor %}
+                </div>
+                <!--Class A-->
+                <div class="cs-gallery" data-category="three">
+                    {% for photo in photos.classa %}
+                        <picture class="cs-image">
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <!--Tablet Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  |resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="{{ photo }}"
+                                alt="gallery"
+                                width="305"
+                                height="400"
+                            />
+                        </picture>
+                    {% endfor %}
+                </div>
+                <!--Class B-->
+                <div class="cs-gallery" data-category="four">
+                    {% for photo in photos.classb %}
+                        <picture class="cs-image">
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <!--Tablet Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  |resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="{{ photo }}"
+                                alt="gallery"
+                                width="305"
+                                height="400"
+                            />
+                        </picture>
+                    {% endfor %}
+                </div>
+                <!--Class C-->
+                <div class="cs-gallery" data-category="five">
+                    {% for photo in photos.classc %}
+                        <picture class="cs-image">
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <!--Tablet Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  |resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="{{ photo }}"
+                                alt="gallery"
+                                width="305"
+                                height="400"
+                            />
+                        </picture>
+                    {% endfor %}
+                </div>
+                <!--Campers-->
+                <div class="cs-gallery" data-category="six">
+                    {% for photo in photos.camper %}
+                        <picture class="cs-image">
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(max-width: 600px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <!--Tablet Image-->
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | avif %}
+                                "
+                                type="image/avif"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  | resize({ width: 600, height: 800 }) | webp %}
+                                "
+                                type="image/webp"
+                            />
+                            <source
+                                media="(min-width: 601px)"
+                                srcset="
+                                    {% getUrl photo  |resize({ width: 600, height: 800 }) | jpeg %}
+                                "
+                                type="image/jpeg"
+                            />
+                            <img
+                                loading="lazy"
+                                decoding="async"
+                                src="{{ photo }}"
+                                alt="gallery"
+                                width="305"
+                                height="400"
+                            />
+                        </picture>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

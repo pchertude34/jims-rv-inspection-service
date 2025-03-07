@@ -1,0 +1,196 @@
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-405 {
+    padding: var(--sectionPadding);
+  }
+  #gallery-405 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 1;
+  }
+  #gallery-405 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #gallery-405 .cs-title {
+    margin: 0 0 1.5rem 0;
+  }
+  #gallery-405 .cs-button-group {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+  }
+  #gallery-405 .cs-button {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s;
+  }
+  #gallery-405 .cs-button:hover {
+    color: var(--primary);
+    cursor: pointer;
+  }
+  #gallery-405 .cs-button.cs-active {
+    color: var(--primary);
+  }
+  #gallery-405 .cs-gallery-wrapper {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+  #gallery-405 .cs-gallery {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+    transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s, left 0.3s;
+    /* makes the transfrom scaling orgin the top left corner, dictates the direction by which the scale transforms animate towards */
+    transform-origin: left top;
+  }
+  #gallery-405 .cs-gallery.cs-hidden {
+    position: absolute;
+    /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
+    visibility: hidden;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
+    opacity: 0;
+    /* this top and left value help control the animation, by setting it to position absolute and left 0, the gallery won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-container (left: 0). Same for the bottom:0 value, the gallery won't go past that posiiton when it animates */
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
+    transform: scaleY(0) scaleX(0);
+  }
+  #gallery-405 .cs-gallery.cs-hidden .cs-image {
+    /* when gallery is hidden, add these styles to the cs-image to animate from when cs-hidden is removed from the .cs-gallery */
+    transform: translateY(2.1875rem);
+    opacity: 0;
+  }
+  #gallery-405 .cs-image {
+    border-radius: 1.25rem;
+    width: 46%;
+    /* 150px - 300px */
+    height: clamp(9.375rem, 39vw, 18.75rem);
+    max-width: 21.875rem;
+    /* clips the image corners */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    /* when .cs-hidden is removed from the .cs-gallery, reset these values and animate between their hidden styles */
+    transform: translateY(0rem);
+    opacity: 1;
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  #gallery-405 .cs-image:nth-of-type(1) {
+    /* the transition delays change at desktop */
+    /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
+    transition-delay: 0.15s;
+  }
+  #gallery-405 .cs-image:nth-of-type(2) {
+    transition-delay: 0.3s;
+  }
+  #gallery-405 .cs-image:nth-of-type(3) {
+    transition-delay: 0.45s;
+  }
+  #gallery-405 .cs-image:nth-of-type(4) {
+    transition-delay: 0.6s;
+  }
+  #gallery-405 .cs-image:nth-of-type(5) {
+    transition-delay: 0.75s;
+  }
+  #gallery-405 .cs-image:nth-of-type(6) {
+    transition-delay: 0.9s;
+  }
+  #gallery-405 .cs-image:nth-of-type(7) {
+    transition-delay: 1.05s;
+  }
+  #gallery-405 .cs-image:nth-of-type(8) {
+    transition-delay: 1.2s;
+  }
+  #gallery-405 .cs-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #gallery-405 .cs-image {
+    width: 23.8%;
+    /* 300px - 400px */
+    height: clamp(18.75rem, 30vw, 25rem);
+    aspect-ratio: 1;
+  }
+  #gallery-405 .cs-image:nth-of-type(1) {
+    /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
+    transition-delay: 0.15s;
+  }
+  #gallery-405 .cs-image:nth-of-type(2) {
+    transition-delay: 0.3s;
+  }
+  #gallery-405 .cs-image:nth-of-type(3) {
+    transition-delay: 0.45s;
+  }
+  #gallery-405 .cs-image:nth-of-type(4) {
+    transition-delay: 0.6s;
+  }
+  #gallery-405 .cs-image:nth-of-type(5) {
+    transition-delay: 0.15s;
+  }
+  #gallery-405 .cs-image:nth-of-type(6) {
+    transition-delay: 0.3s;
+  }
+  #gallery-405 .cs-image:nth-of-type(7) {
+    transition-delay: 0.45s;
+  }
+  #gallery-405 .cs-image:nth-of-type(8) {
+    transition-delay: 0.6s;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-405 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #gallery-405 .cs-title,
+  body.dark-mode #gallery-405 .cs-text,
+  body.dark-mode #gallery-405 .cs-button {
+    color: var(--bodyTextColorWhite);
+  }
+}
+
+/*# sourceMappingURL=gallery.css.map */
