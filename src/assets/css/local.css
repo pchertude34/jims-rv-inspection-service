@@ -411,6 +411,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs-97 {
     padding: var(--sectionPadding);
+    background-color: var(--lighter);
   }
   #sbs-97 .cs-container {
     width: 100%;
@@ -527,6 +528,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-97 {
+    background-color: var(--medium);
+  }
   body.dark-mode #sbs-97 .cs-picture:before, body.dark-mode #sbs-97 .cs-picture:after {
     background: var(--accent);
   }

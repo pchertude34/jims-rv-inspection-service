@@ -219,7 +219,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services-1646 {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--dark);
   }
   body.dark-mode #services-1646 .cs-item,
   body.dark-mode #services-1646 .cs-content {

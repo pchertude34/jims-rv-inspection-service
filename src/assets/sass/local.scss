@@ -476,7 +476,7 @@
 @media only screen and (min-width: 0rem) {
     #sbs-97 {
         padding: var(--sectionPadding);
-
+        background-color: var(--lighter);
         .cs-container {
             width: 100%;
             /* changes to 1280px at tablet */
@@ -611,6 +611,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-97 {
+            background-color: var(--medium);
             .cs-picture {
                 &:before,
                 &:after {
