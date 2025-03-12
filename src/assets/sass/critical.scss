@@ -12,7 +12,8 @@
         /* 200px - 300px - leaving extra space for the navigation */
         padding: clamp(12.5rem, 31.95vw, 18.75rem) calc(16 / 16 * 1rem) 0;
         /* 130px - 200px */
-        padding-bottom: clamp(8.125rem, 16.5vw, 12.5rem);
+        // padding-bottom: clamp(8.125rem, 16.5vw, 12.5rem);
+        padding-bottom: clamp(2.5rem, 5.1vw, 3.75rem);
         position: relative;
         z-index: 1;
 
@@ -21,6 +22,7 @@
             height: 100%;
             display: block;
             position: absolute;
+            margin-top: 139px;
             top: 0;
             left: 0;
             z-index: -2;
@@ -49,7 +51,7 @@
                 width: 100%;
                 object-fit: cover;
                 /* makes the top of the image start at the top of the parent */
-                object-position: top;
+                object-position: top left;
             }
         }
 
